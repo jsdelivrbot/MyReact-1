@@ -1,3 +1,6 @@
+The next sauce was brought here.
+https://github.com/StephenGrider/ReduxSimpleStarter
+
 # ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
