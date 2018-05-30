@@ -1,14 +1,13 @@
-import React, { Component, Fragment } from 'react';
-import BookList from '../containers/book-list';
-import BookDetail from '../containers/book-detail';
+import React, { Component } from 'react';
+
+import SearchBar from '../containers/search_bar';
 
 export default class App extends Component {
   render() {
     return (
-      <Fragment>
-        <BookList />
-        <BookDetail />
-      </Fragment>
+      <div>
+        <SearchBar/>
+      </div>
     );
   }
 }
