@@ -1,5 +1,5 @@
 // 액션 생성자
-import { FETCH_POSTS } from '../actions/index';
+import { FETCH_POSTS, FETCH_POST } from '../actions/index';
 
 // all은 포스트의 리스트 목록
 // post는 단일 포스트
@@ -10,6 +10,9 @@ const INITIAL_STATE = { all:[], post: null}
 // action은 request로 가져온 액션 객체
 export default function(state = INITIAL_STATE, action){
     switch(action.type) {
+    case FETCH_POST:
+        return {...state, post: action.payload.data };
+
     case FETCH_POSTS:
         return { ...state, all: action.payload.data };
 
