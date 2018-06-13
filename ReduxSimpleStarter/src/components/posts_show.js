@@ -15,6 +15,7 @@ class PostsShow extends Component {
     }
 
     onDeleteClick() {
+        console.log(this.props);
         this.props.deletePost(this.props.params.id)
             .then(() => {
                 this.context.router.push('/');
