@@ -36,6 +36,13 @@ export function fetchPost(id) {
     }
 }
 
+// DELTE 후에는 따로 리듀서가 필요하지는 않다.
+// delete 리퀘스트 요청하고 어떠한 형태를 구성할 필요는 없기 때문이다.
 export function deletePost(id) {
     const request = axios.delete(`${ROOT_URL}/posts/${id}${API_KEY}`)
+
+    return {
+        type: DELETE_POST,
+        payload: request
+    }
 }
